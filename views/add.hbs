@@ -1,0 +1,25 @@
+<h3>Добавить книгу в магазин:</h3>
+<div class="row">
+    <form method="POST" action="/add/addbook" class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="bookAuthor" name="bookAuthor" type="text" class="validate">
+          <label for="bookAuthor">Автор книги:</label>
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="bookName" name="bookName" type="text" class="validate">
+          <label for="bookName">Название книги:</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="bookURL" name="bookURL" type="text" class="validate">
+          <label for="bookURL">Изображение книги:</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="bookPrice" type="number" name="bookPrice" class="validate" min="150" max="5000">
+          <label for="bookPrice">Цена книги:</label>
+        </div>
+        <button type="submit" class="waves-effect waves-light btn-small">Добавить книгу!</button>
+      </div>
+      
+    </form>
+  </div>

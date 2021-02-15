@@ -1,0 +1,26 @@
+<h3>Редактировать книгу {{book.name}}</h3>
+<div class="row">
+    <form method="POST" action="/shop/edit" class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="author" name="author" type="text" class="validate" value="{{book.author}}">
+          <label for="author">Автор книги:</label>
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="name" name="name" type="text" class="validate" value="{{book.name}}">
+          <label for="name">Имя книги:</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="image" name="image" type="text" class="validate" value="{{book.image}}">
+          <label for="image">Изображение книги:</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="price" type="number" name="price" class="validate" min="150" max="5000" value="{{book.price}}">
+          <label for="price">Цена книги:</label>
+        </div>
+        <button type="submit" class="waves-effect waves-light btn-small">Редактировать</button>
+      </div>
+      <input type="hidden" value="{{book.id}}" name="id">
+      
+    </form>
+  </div>

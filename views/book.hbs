@@ -1,0 +1,12 @@
+<div class="container">
+    {{#if book}}
+    <div class="bookwrap">
+        <h3>{{book.author}}</h3>
+        <h4>{{book.name}}</h4>
+        <img src="{{book.image}}" alt="{{book.name}}">
+        <p>{{book.price}}</p>
+    </div>
+    {{else}}
+    <h4>Пустота((</h4>
+    {{/if}}
+</div>

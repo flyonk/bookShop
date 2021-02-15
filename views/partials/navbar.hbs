@@ -1,0 +1,30 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        {{#if isHome}}
+        <li class="active"><a href="/">Главная</a></li>
+        {{else}}
+        <li><a href="/">Главная</a></li>
+        {{/if}}
+
+        {{#if isAdd}}
+        <li class="active"><a href="/add">Добавить Книгу</a></li>
+        {{else}}
+        <li><a href="/add">Добавить Книгу</a></li>
+        {{/if}}
+
+        {{#if isShop}}
+        <li class="active"><a href="/shop">Магазин</a></li>
+        {{else}}
+        <li><a href="/shop">Магазин</a></li>
+        {{/if}}
+
+        {{#if isCard}}
+        <li class="active"><a href="/card">Корзина</a></li>
+        {{else}}
+        <li><a href="/card">Корзина</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
